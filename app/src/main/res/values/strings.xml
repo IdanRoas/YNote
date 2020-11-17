@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">YNote</string>
+    <string name="public_note_title">Public Notes</string>
+    <string name="sponsored_note_title">sponserd_note_title</string>
+    <string name="home_note_title">home_tote_title</string>
+</resources>
