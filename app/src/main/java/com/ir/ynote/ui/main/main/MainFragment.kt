@@ -54,7 +54,8 @@ class MainFragment : Fragment(), FirebaseAuth.AuthStateListener {
             }
         }
             false
-        bottom_menu.setOnNavigationItemSelectedListener (mOnNavigationItemSelectedListener) }
+        bottom_menu.setOnNavigationItemSelectedListener (mOnNavigationItemSelectedListener)
+    }
 
 
 

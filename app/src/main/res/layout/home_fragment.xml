@@ -29,7 +29,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/appCompatTextView"
+        android:id="@+id/public_note_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
@@ -46,7 +46,7 @@
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="30dp"
         app:layout_constraintBottom_toTopOf="@+id/sponsored_notes_title"
-        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView"
+        app:layout_constraintTop_toBottomOf="@+id/public_note_title"
         tools:layout_editor_absoluteX="28dp" />
 
     <TextView
@@ -56,9 +56,9 @@
         android:layout_marginLeft="20dp"
         android:text="@string/sponsored_note_title"
         android:textColor="@color/colorAccent"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintBottom_toTopOf="@+id/add_new_note_button"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/public_note_title" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/sponsored_note_recyclerView"
@@ -66,12 +66,12 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintBottom_toTopOf="@+id/add_new_note_button"
         app:layout_constraintTop_toBottomOf="@+id/sponsored_notes_title"
         tools:layout_editor_absoluteX="20dp" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/add_new_note_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="30dp"

@@ -1,0 +1,24 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=5E:1B:2A:29:DC:E4:A4:DC:8B:DE:BE:23:B9:05:E2:C3:EE:4B:D4:AA%3Bcom.ir.ynote.ui.main.map
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    com.ir.ynote.ui.main.map
+
+    SHA-1 certificate fingerprint:
+    5E:1B:2A:29:DC:E4:A4:DC:8B:DE:BE:23:B9:05:E2:C3:EE:4B:D4:AA
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDWfz4pIGZvu6KFk7h5aRg3ggMJhB8Dbhw</string>
+</resources>

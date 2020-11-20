@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.location.Location
 import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import com.google.android.gms.location.LocationCallback
 import com.google.android.gms.location.LocationRequest
 import com.google.android.gms.location.LocationResult
@@ -12,9 +13,10 @@ import com.ir.ynote.dto.LocationDTO
 
 class LocationLiveData(context: Context) : LiveData<LocationDTO>() {
 
+    var locationLiveData:MutableLiveData<LocationDTO>?=null
+
     companion object {
         private const val INTERVAL: Long= 8000
-
         val locationRequest: LocationRequest = LocationRequest.create().apply {
             interval = INTERVAL
             fastestInterval = INTERVAL/2
@@ -30,6 +32,7 @@ class LocationLiveData(context: Context) : LiveData<LocationDTO>() {
             longitude = location.longitude,
             latitude = location.latitude
         )
+        locationLiveData?.value=value
     }
 
     @SuppressLint("MissingPermission")
